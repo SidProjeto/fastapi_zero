@@ -1,0 +1,5 @@
+{
+  "python-envs.defaultEnvManager": "ms-python.python:poetry",
+  "python-envs.defaultPackageManager": "ms-python.python:poetry",
+  "python.defaultInterpreterPath": "C:\\Users\\Pichau\\AppData\\Local\\pypoetry\\Cache\\virtualenvs\\fastapi-zero-htbJHUcO-py3.14\\Scripts\\python.exe"
+}
