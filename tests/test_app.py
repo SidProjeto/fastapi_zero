@@ -5,20 +5,20 @@ from fastapi.testclient import TestClient
 from fastapi_zero.app import app
 
 
-def test_raiz_deve_retornar_ola_mundo():
+def test_root_deve_retornar_ola_mundo():
     """
     Esse teste tem 3 etapas (AAA)
     - A: Arrange - Arranjo
-    - A: Act - Executa a coisa (o SUT)
-    - A: Assert - Garanta que A é A
+    - A: Act     - Executa a coisa (o SUT)
+    - A: Assert  - Garanta que A é A
     """
 
     # Arrange
-    cliente = TestClient(app)
+    client = TestClient(app)
 
     # Act
-    resposta = cliente.get('/')
+    respost = client.get('/')
 
     # Assert
-    assert resposta.json() == {'mensagem': 'olá mundo!'}
-    assert resposta.status_code == HTTPStatus.OK
+    assert respost.json() == {'message': 'Olá mundo!'}
+    assert respost.status_code == HTTPStatus.OK
